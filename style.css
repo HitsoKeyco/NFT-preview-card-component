@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+:root {
+
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --VerydarkbluemainBG: hsl(217, 54%, 11%);
+    --VerydarkbluecardBG: hsl(216, 50%, 16%);
+    --Verydarkblueline: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    font-size: 1rem;
+}
+
+body {
+    background-color: var(--VerydarkbluemainBG);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container {
+    width: 325px;
+    background-color: var(--VerydarkbluecardBG);
+    padding: 25px 25px 0px 25px;
+    border-radius: 15px;
+}
+
+
+img {
+    width: 100%;
+    border-radius: 10px;    
+}
+
+h1 {
+    color:  var(--White);
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: 22px  0  15px 0
+}
+
+h2 {
+    color: var(--Softblue);
+    font-size: 1em;
+    font-weight: 200;
+    line-height: 1.5;    
+}
+
+.section_money{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0
+}
+
+.ether {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section_money .ether :nth-child(2){ /*h3*/
+    color: var(--Cyan);
+    font-size: 1em;
+    font-weight: 400;
+
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.section_money .time :nth-child(1){
+    width: 15px;
+    height: 15px;
+}
+
+.section_money .time :nth-child(2){
+    color: var(--Softblue);
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.line{
+    width: 100%;
+    border-top: 1px solid var(--Softblue);
+    opacity: 0.3;    
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 20px 0 25px 0;
+}
+
+.user img:nth-child(1){
+    width: 33px;
+    border-radius: 15px;
+    border: 1px solid var(--White);    
+}
+
+.user p{
+    color: var(--Softblue);    
+}
+
+.user span{
+    color: var(--White);    
+}
